@@ -1,31 +1,97 @@
+/* App.css */
+
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Set height to 100% */
+}
+
+/* Global theme styles */
+.App {
+  min-height: 100vh; /* Ensure the app container fills at least the viewport height */
+  display: flex; /* Use flexbox to make children fill the container */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  background-color: #f9f9f9; /* Set default background color */
+  color: #333; /* Set default text color */
+}
+
+.light {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.dark {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+/* Other styles */
 .App {
   text-align: center;
+  margin-top: 0; /* Remove margin from the top */
+  padding-top: 50px; /* Add padding to the top */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-.heart {
-  color: #ff0000;
+.pokemon {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.small {
-  font-size: 0.75rem;
+.pokemon img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.theme-toggle {
+  margin-top: auto; /* Push the button to the bottom */
+  margin-bottom: 20px; /* Add some space between the button and other elements */
+}
+
+/* Make the theme toggle button a normal size */
+.theme-toggle button {
+  padding: 8px 16px; /* Adjust padding for a smaller button */
+  background-color: #0a07bff; /* Set button background color */
+  color: white; /* Set button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+/* Button hover effect */
+.theme-toggle button:hover {
+  background-color: #0056b3; /* Change background color on hover */
 }
